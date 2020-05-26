@@ -6,3 +6,4 @@ media/
 .vscode
 *.lock
 .DS_Store
+.env
