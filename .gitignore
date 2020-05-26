@@ -1,0 +1,8 @@
+*~
+*.pyc
+media/
+**/migrations/*
+!**/migrations/__init__.py
+.vscode
+*.lock
+.DS_Store
