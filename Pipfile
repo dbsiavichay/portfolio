@@ -5,6 +5,8 @@ verify_ssl = true
 
 [dev-packages]
 psycopg2-binary = "*"
+pylint = "*"
+flake8 = "*"
 
 [packages]
 django = "==3.0.6"
