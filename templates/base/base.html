@@ -3,29 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home | Denis Siavichay</title>
+	<title>{% block metatitle %}{% endblock %} | Denis Siavichay</title>
 	<meta name="keywords" content="Python,Django,HTML5,CSS3,HTML,Resume,CV" >
 	<meta name="description" content="Denis Siavichay resume, portfolio and blog">
 
     {%include "base/css.html" %}
 
 </head>
-<body class="animsition fixed-menu">
+<body class="animsition">
 {% include "base/navbar.html" %}
+
+{% block header %}{% endblock %}
 
 <!-- Content section
 ================================================== -->
 <section class="content no-padding">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<p>&nbsp;</p>
-			</div>
-		</div>
-		{% block content %}{% endblock %}
-	</div>
-
+	{% block content %}{% endblock %}
 </section>
 
 

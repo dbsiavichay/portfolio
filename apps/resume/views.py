@@ -1,3 +1,10 @@
-from django.shortcuts import render
+# Django
+from django.urls import reverse_lazy
+from django.views.generic import ListView
 
-# Create your views here.
+# Models
+from apps.resume.models import Timeline
+
+
+class TimelineListView(ListView):
+    model = Timeline

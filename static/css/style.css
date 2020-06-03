@@ -291,7 +291,7 @@ body.fixed-menu #burger-menu {
   display: block;
   line-height: 158px;
   width: 88px;
-  background-image: url(images/logo.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
