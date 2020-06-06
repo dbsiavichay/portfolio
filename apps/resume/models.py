@@ -1,5 +1,6 @@
 # Django
 from django.db import models
+from django.core.validators import MaxValueValidator
 
 
 class Timeline(models.Model):
@@ -59,3 +60,34 @@ class JobActivity(models.Model):
     class Meta:
         verbose_name = 'actividad'
         verbose_name_plural = 'actividades'
+
+
+class Skill(models.Model):
+    name = models.CharField(max_length=64, verbose_name='nombre')
+    percent = models.PositiveSmallIntegerField(
+        validators=[MaxValueValidator(limit_value=100)],
+        verbose_name='pocentaje'
+    )
+    order = models.PositiveSmallIntegerField(default=1)
+
+    class Meta:
+        ordering = ('order',)
+
+    def __str__(self):
+        return self.name
+
+
+class Language(models.Model):
+    name = models.CharField(max_length=64, verbose_name='nombre')
+    percent = models.PositiveSmallIntegerField(
+        validators=[MaxValueValidator(limit_value=100)],
+        verbose_name='pocentaje'
+    )
+    order = models.PositiveSmallIntegerField(default=1)
+
+    class Meta:
+        verbose_name = 'idioma'
+        ordering = ('order',)
+
+    def __str__(self):
+        return self.name

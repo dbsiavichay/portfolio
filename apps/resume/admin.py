@@ -2,7 +2,9 @@
 from django.contrib import admin
 
 # Models
-from apps.resume.models import JobTitle, JobExperience, JobActivity
+from apps.resume.models import (
+    JobTitle, JobExperience, JobActivity, Skill, Language
+)
 
 
 @admin.register(JobTitle)
@@ -35,3 +37,15 @@ class JobExperienceAdmin(admin.ModelAdmin):
     inlines = (
         JobActivityInline,
     )
+
+
+@admin.register(Skill)
+class SkillAdmin(admin.ModelAdmin):
+    list_display = ('name', 'percent', 'order')
+    list_editable = ('percent', 'order')
+
+
+@admin.register(Language)
+class LanguageAdmin(admin.ModelAdmin):
+    list_display = ('name', 'percent', 'order')
+    list_editable = ('percent', 'order')

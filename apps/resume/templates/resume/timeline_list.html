@@ -20,7 +20,7 @@
                             <span class="exp-icon">
                                 <i class="fa fa-graduation-cap"></i>
                             </span>
-                            <h4>my qualification</h4>
+                            <h4>educación</h4>
                         </div>
                     </div>
                     <div class="col-xs-6">
@@ -28,7 +28,7 @@
                             <span class="exp-icon">
                                 <i class="fa fa-briefcase"></i>
                             </span>
-                            <h4>my work experience</h4>
+                            <h4>experiencia</h4>
                         </div>
                     </div>
                 </div>
@@ -95,84 +95,29 @@
     </div>
 </div>
 
-
-
 <div data-bg-color="#f6f6f6">
 <div class="container padding4x">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="title-md text-center">MY PROFESSIONAL SKILLS</h2>
+            <h2 class="title-md text-center">SKILLS PROFESIONALES</h2>
             <br>
         </div>
     </div>
 
     <div class="row">
+        {% for skill in skills %}
         <div class="col-sm-6">
-            
             <div class="progress-line">
                 <div class="entry-title">
-                    <h5>Html5 & css3</h5>
-                    <span>75%</span>
+                    <h5>{{ skill.name }}</h5>
+                    <span>{{ skill.percent }}%</span>
                 </div>
                 <div class="entry-line">
                     <div class="current"></div>
                 </div>
             </div>
-
-            <div class="progress-line">
-                <div class="entry-title">
-                    <h5>Javascript</h5>
-                    <span>60%</span>
-                </div>
-                <div class="entry-line">
-                    <div class="current"></div>
-                </div>
-            </div>
-
-            <div class="progress-line">
-                <div class="entry-title">
-                    <h5>Wordpress</h5>
-                    <span>90%</span>
-                </div>
-                <div class="entry-line">
-                    <div class="current"></div>
-                </div>
-            </div>
-
         </div>
-        <div class="col-sm-6">
-            
-            <div class="progress-line">
-                <div class="entry-title">
-                    <h5>Photoshop</h5>
-                    <span>80%</span>
-                </div>
-                <div class="entry-line">
-                    <div class="current"></div>
-                </div>
-            </div>
-
-            <div class="progress-line">
-                <div class="entry-title">
-                    <h5>PHP</h5>
-                    <span>75%</span>
-                </div>
-                <div class="entry-line">
-                    <div class="current"></div>
-                </div>
-            </div>
-
-            <div class="progress-line">
-                <div class="entry-title">
-                    <h5>MySQL</h5>
-                    <span>85%</span>
-                </div>
-                <div class="entry-line">
-                    <div class="current"></div>
-                </div>
-            </div>
-
-        </div>
+        {% endfor %}
     </div>
 
 </div>
@@ -182,36 +127,22 @@
     <div class="row">
         <div class="col-md-12">
             <p>&nbsp;</p>
-            <h2 class="title-md text-center">LANGUAGE SKILLS & KNOWLEDGE</h2>
+            <h2 class="title-md text-center">IDIOMAS & CONOCIMIENTO</h2>
             <br>
         </div>
     </div>
 
     <div class="row">
+        {% for language in languages %}
         <div class="col-md-2 col-sm-4 col-xs-4">
             <div class="pie-progress-wrapper">
-                <div class="pie_progress" role="progressbar" data-goal="75">
+                <div class="pie_progress" role="progressbar" data-goal="{{ language.percent }}">
                     <div class="pie_progress__number">0%</div>
                 </div>
-                <h4>spanish</h4>
+                <h4>{{ language.name }}</h4>
             </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-4">
-            <div class="pie-progress-wrapper">
-                <div class="pie_progress" role="progressbar" data-goal="70">
-                    <div class="pie_progress__number">0%</div>
-                </div>
-                <h4>french</h4>
-            </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-4">
-            <div class="pie-progress-wrapper">
-                <div class="pie_progress" role="progressbar" data-goal="99">
-                    <div class="pie_progress__number">0%</div>
-                </div>
-                <h4>spanish</h4>
-            </div>
-        </div>
+        {% endfor %}
         <div class="col-md-3 col-sm-6 col-xs-12">
             <ul class="check-list">
                 <li>install and configure</li>
@@ -238,7 +169,6 @@
 
 
 </div>
-
 
 <div data-bg-color="#f6f6f6">
     <div class="container padding4x">
@@ -374,12 +304,10 @@
     </div>
 </div>
 
-
-
 <div class="container padding4x">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="title-md text-center">HOBBIES & INTEREST</h2>
+            <h2 class="title-md text-center">HOBBIES PERSONALES</h2>
             <br>
         </div>
     </div>
@@ -392,7 +320,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-1.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-1.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>Swimming</h6>
@@ -403,7 +331,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-2.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-2.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>photography</h6>
@@ -414,7 +342,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-3.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-3.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>photography</h6>
@@ -425,7 +353,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-4.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-4.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>photography</h6>
@@ -436,7 +364,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-5.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-5.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>photography</h6>
@@ -447,7 +375,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-3.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-3.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>photography</h6>
@@ -458,7 +386,7 @@
                 <div class="box-item">
                     <div class="entry-item">
                         <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(images/pages/resume/s-6.png);"></span>
+                        <span style="background-image:url(/static/images/pages/resume/s-6.png);"></span>
                     </div>
                     <div class="entry-hover">
                         <h6>photography</h6>
