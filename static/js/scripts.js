@@ -84,6 +84,7 @@
 
 
 		// Timeline
+		/*
 		$('.timeline-exp').each(function(){
 			var $tl = $(this);
 
@@ -92,7 +93,7 @@
 					$(this).find('.tl-item').addClass('pull-right');
 				}
 			});
-		});
+		});*/
 
 
 		// Progress Line

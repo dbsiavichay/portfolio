@@ -9,7 +9,7 @@ from apps.resume.models import (
 
 @admin.register(JobTitle)
 class JobTitleAdmin(admin.ModelAdmin):
-    list_display = ('level', 'institution', 'name')
+    list_display = ('level', 'institution', 'name', 'start_date', 'ends_date')
     fields = (
         'level',
         'institution',
@@ -22,11 +22,14 @@ class JobTitleAdmin(admin.ModelAdmin):
 
 class JobActivityInline(admin.TabularInline):
     model = JobActivity
+    extra = 1
 
 
 @admin.register(JobExperience)
 class JobExperienceAdmin(admin.ModelAdmin):
-    list_display = ('institution', 'job_position', 'current_job')
+    list_display = (
+        'institution', 'job_position', 'start_date', 'ends_date', 'current_job'
+    )
     fields = (
         'institution',
         'job_position',

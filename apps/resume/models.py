@@ -11,6 +11,9 @@ class Timeline(models.Model):
         verbose_name='fecha de finalización'
     )
 
+    class Meta:
+        ordering = ('-start_date',)
+
 
 class JobTitle(Timeline):
     level = models.CharField(
@@ -30,6 +33,7 @@ class JobTitle(Timeline):
     )
 
     class Meta:
+        ordering = ('start_date',)
         verbose_name = 'título profesional'
         verbose_name_plural = 'títulos profesionales'
 
@@ -46,6 +50,7 @@ class JobExperience(Timeline):
     )
 
     class Meta:
+        ordering = ('start_date',)
         verbose_name = 'experiencia profesional'
         verbose_name_plural = 'experiencias profesionales'
 
@@ -54,12 +59,15 @@ class JobExperience(Timeline):
 
 
 class JobActivity(models.Model):
-    description = models.CharField(max_length=64, verbose_name='descripción')
+    description = models.TextField(verbose_name='descripción')
     experience = models.ForeignKey(JobExperience, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'actividad'
         verbose_name_plural = 'actividades'
+
+    def __str__(self):
+        return self.description
 
 
 class Skill(models.Model):
