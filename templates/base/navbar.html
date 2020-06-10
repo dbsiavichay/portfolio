@@ -23,41 +23,40 @@
 						
 						<ul>
 							<li>
-								<a href="index.html" class="active at-link">
+								<a href="{% url 'index' %}" class="active at-link">
 									<i class="fa fa-home"></i>
-									<span>About</span>
-								</a>
-							</li>
-							<li>
-								<a href="profile.html" class="at-link">
-									<i class="fa fa-user"></i>
-									<span>Profile</span>
+									<span>Sobre mi</span>
 								</a>
 							</li>
 							<li>
 								<a href="{% url 'resume:home' %}" class="at-link">
 									<i class="fa fa-file-text-o"></i>
-									<span>Resume</span>
+									<span>Curriculum</span>
 								</a>
 							</li>
 
 							<li>
-								<a href="portfolio.html" class="at-link">
+								<a href="{% url 'portfolio:home' %}" class="at-link">
 									<i class="fa fa-briefcase"></i>
-									<span>Portfolio</span>
+									<span>Portafolio</span>
 								</a>
 							</li>
-
 							<li>
 								<a href="blog.html" class="at-link">
-									<i class="fa fa-file-text-o"></i>
+									<i class="fa fa-pencil"></i>
 									<span>Blog</span>
+								</a>
+							</li>
+							<li>
+								<a href="blog.html" class="at-link">
+									<i class="fa fa-code "></i>
+									<span>Mi stack</span>
 								</a>
 							</li>
 							<li>
 								<a href="contacts.html" class="at-link">
 									<i class="fa fa-phone"></i>
-									<span>Contact us</span>
+									<span>Contacto</span>
 								</a>
 							</li>
 						</ul>

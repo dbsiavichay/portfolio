@@ -14,15 +14,16 @@ class Category(models.Model):
 class Project(models.Model):
     name = models.CharField(max_length=128, verbose_name='nombre')
     description = models.TextField(verbose_name='descripción')
+    image = models.ImageField(upload_to='projects')
     url = models.URLField()
     date = models.DateField(verbose_name='fecha')
-    category = models.ForeignKey(
+    categories = models.ManyToManyField(
         Category,
-        on_delete=models.PROTECT,
-        verbose_name='categoría'
+        verbose_name='categorías'
     )
 
     class Meta:
+        ordering = ('date',)
         verbose_name = 'proyecto'
 
     def __str__(self):

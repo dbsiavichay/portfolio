@@ -1,15 +1,15 @@
-"""Resume URLs."""
+"""Portfolio URLs."""
 
 # Django
 from django.urls import path
 
 # Views
-from apps.resume.views import TimelineListView
+from apps.portfolio.views import ProjectListView
 
 urlpatterns = [
     path(
         route='',
-        view=TimelineListView.as_view(),
+        view=ProjectListView.as_view(),
         name='home'
     ),
 ]
