@@ -1,6 +1,7 @@
 *~
 *.pyc
 media/
+scripts/
 **/migrations/*
 !**/migrations/__init__.py
 .vscode
