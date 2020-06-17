@@ -54,7 +54,7 @@ rules used in this template
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #333;
+  background-color: rgb(255, 95, 86);
   margin-bottom: 3px;
 }
 
@@ -68,18 +68,26 @@ rules used in this template
 }
 
 #burger-menu {
-  position: fixed;
+  position: absolute;
   z-index: 100;
-  top: 70px;
+  top: 50px;
   left: 50px;
-  display: none;
 }
 
 body.fixed-menu #burger-menu {
   display: block;
 }
-/* Close Current Page Button */
 
+/* Main cover image */
+
+.cover-image {
+  border-radius: 50%;
+  border: 8px solid #4ac3bf;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/* Close Current Page Button */
 #close-page {
   display: inline-block;
   width: 70px;
@@ -279,7 +287,7 @@ body.fixed-menu #burger-menu {
 
 #header {
   height: 158px;
-  background-color: #f6f6f6;
+  background-color: #272822;
   width: 100%;
 }
 
@@ -291,7 +299,7 @@ body.fixed-menu #burger-menu {
   display: block;
   line-height: 158px;
   width: 88px;
-  background-image: url(../images/logo.png);
+  background-image: url(../images/avatar.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -316,6 +324,8 @@ body.fixed-menu #burger-menu {
   display: table-cell;
   height: 158px;
   vertical-align: middle;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #header .page-title h1 {
@@ -2402,10 +2412,12 @@ address table td:first-child {
 
   .title-lgx {
     font-size: 50px;
+    text-align: center;
   }
 
   .title-light {
     font-size: 24px;
+    text-align: center;
   }
 
   .title-lg {
