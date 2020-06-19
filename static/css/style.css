@@ -54,7 +54,7 @@ rules used in this template
   display: block;
   width: 100%;
   height: 4px;
-  background-color: rgb(255, 95, 86);
+  background-color: #ff6188;
   margin-bottom: 3px;
 }
 
@@ -82,7 +82,7 @@ body.fixed-menu #burger-menu {
 
 .cover-image {
   border-radius: 50%;
-  border: 8px solid #4ac3bf;
+  border: 8px solid #78dce8;
   margin: auto;
   margin-top: 25px;
 }
@@ -94,7 +94,7 @@ body.fixed-menu #burger-menu {
   height: 70px;
   line-height: 70px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #2c292d;
   text-align: center;
   text-decoration: none;
   position: fixed;
@@ -263,12 +263,12 @@ body.fixed-menu #burger-menu {
 
 #navigation .nav-wrapper ul li a.active i,
 #navigation .nav-wrapper ul li a:hover i {
-  color: #4ac3bf;
+  color: #78dce8;
 }
 
 #navigation .nav-wrapper ul li a.active svg path,
 #navigation .nav-wrapper ul li a:hover svg path {
-  fill: #4ac3bf;
+  fill: #78dce8;
 }
 
 #navigation .nav-wrapper h4 {
@@ -287,7 +287,7 @@ body.fixed-menu #burger-menu {
 
 #header {
   height: 158px;
-  background-color: #272822;
+  background-color: #2c292d;
   width: 100%;
 }
 
@@ -305,7 +305,7 @@ body.fixed-menu #burger-menu {
   background-size: contain;
   font-family: 'Oswald';
   font-size: 32px;
-  color: #4ac3bf;
+  color: #78dce8;
   text-indent: -9999px;
   margin-right: 32px;
   float: left;
@@ -333,7 +333,7 @@ body.fixed-menu #burger-menu {
   font-family: 'Oswald';
   font-size: 24px;
   font-weight: normal;
-  color: #4ac3bf;
+  color: #78dce8;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -346,7 +346,7 @@ body.fixed-menu #burger-menu {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0px;
-  color: #333333;
+  color: #2c292d;
 }
 
 #header .menu-pager {
@@ -367,8 +367,8 @@ body.fixed-menu #burger-menu {
   border-radius: 50%;
   line-height: 38px;
   text-align: center;
-  color: #333333;
-  border: 2px solid #333333;
+  color: #2c292d;
+  border: 2px solid #2c292d;
 }
 
 #header .menu-pager li a i {
@@ -378,8 +378,8 @@ body.fixed-menu #burger-menu {
 }
 
 #header .menu-pager li a:hover {
-  color: #4ac3bf;
-  border-color: #4ac3bf;
+  color: #78dce8;
+  border-color: #78dce8;
 }
 /* Helpers and Elements
 ====================================*/
@@ -410,7 +410,7 @@ body.fixed-menu #burger-menu {
 }
 
 .text-brand {
-  color: #4ac3bf;
+  color: #78dce8;
 }
 /* Info box
 ==================================================================*/
@@ -492,7 +492,7 @@ body.fixed-menu #burger-menu {
   font-family: 'Lato';
   font-size: 40px;
   font-weight: bold;
-  color: #4ac3bf;
+  color: #78dce8;
   text-transform: uppercase;
   margin: 0px;
   margin-bottom: 5px;
@@ -511,7 +511,7 @@ body.fixed-menu #burger-menu {
 
 .info-boxes .ib-item.active,
 .info-boxes .ib-item:hover {
-  background-color: #4ac3bf !important;
+  background-color: #78dce8 !important;
 }
 
 .info-boxes .ib-item.active .icon,
@@ -550,7 +550,7 @@ body.fixed-menu #burger-menu {
 
 .service-item .icon {
   font-size: 48px;
-  color: #333333;
+  color: #2c292d;
   float: left;
 }
 
@@ -715,7 +715,7 @@ body.fixed-menu #burger-menu {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #4ac3bf;
+  color: #78dce8;
   font-style: normal;
 }
 
@@ -748,7 +748,7 @@ body.fixed-menu #burger-menu {
 .price-box .entry-item {
   text-align: center;
   padding: 30px;
-  border: 1px solid #333333;
+  border: 1px solid #2c292d;
   cursor: pointer;
 }
 
@@ -756,7 +756,7 @@ body.fixed-menu #burger-menu {
   display: inline-block;
   width: 140px;
   height: 140px;
-  border: 2px solid #333333;
+  border: 2px solid #2c292d;
   border-radius: 50%;
   position: relative;
 }
@@ -769,7 +769,7 @@ body.fixed-menu #burger-menu {
   right: 5px;
   bottom: 5px;
   border-radius: 50%;
-  background-color: #333333;
+  background-color: #2c292d;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -814,11 +814,11 @@ body.fixed-menu #burger-menu {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #2c292d;
   padding-bottom: 30px;
   margin-bottom: 30px;
   margin-top: 20px;
-  color: #333333;
+  color: #2c292d;
 }
 
 .price-box .entry-item .box-info .btn {
@@ -828,30 +828,30 @@ body.fixed-menu #burger-menu {
 
 .price-box.active .entry-item .circle-label,
 .price-box:hover .entry-item .circle-label {
-  border-color: #4ac3bf;
+  border-color: #78dce8;
 }
 
 .price-box.active .entry-item .circle-label::before,
 .price-box:hover .entry-item .circle-label::before {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 
 .price-box.active .entry-item .box-info h4,
 .price-box:hover .entry-item .box-info h4 {
-  color: #4ac3bf;
+  color: #78dce8;
 }
 
 .price-box.active .entry-item .box-info .btn,
 .price-box:hover .entry-item .box-info .btn {
   color: #fff;
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 /* Timeline
 ==================================================================*/
 
 .timeline-exp .exp-title {
   text-align: center;
-  color: #4ac3bf;
+  color: #78dce8;
 }
 
 .timeline-exp .exp-title .exp-icon {
@@ -860,7 +860,7 @@ body.fixed-menu #burger-menu {
 }
 
 .timeline-exp .exp-title h4 {
-  color: #4ac3bf;
+  color: #78dce8;
   font-family: 'Oswald';
   font-weight: normal;
   font-size: 26px;
@@ -870,7 +870,7 @@ body.fixed-menu #burger-menu {
 
 .timeline-exp .timeline-wrapper {
   position: relative;
-  border-top: 2px solid #333333;
+  border-top: 2px solid #ff6188;
   padding-top: 54px;
   margin-top: 30px;
 }
@@ -886,7 +886,7 @@ body.fixed-menu #burger-menu {
   display: inline-block;
   width: 54px;
   height: 54px;
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   border-radius: 50%;
   font-size: 30px;
   text-align: center;
@@ -907,7 +907,7 @@ body.fixed-menu #burger-menu {
   font-size: 15px;
   font-weight: normal;
   text-transform: uppercase;
-  color: #333333;
+  color: #2c292d;
 }
 
 .timeline-exp .timeline-wrapper .tl-item h4 {
@@ -917,7 +917,7 @@ body.fixed-menu #burger-menu {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  color: #4ac3bf;
+  color: #78dce8;
 }
 
 .timeline-exp .timeline-wrapper .tl-item p {
@@ -933,11 +933,11 @@ body.fixed-menu #burger-menu {
 .timeline-exp .timeline-wrapper .tl-item.pull-right .icon {
   right: auto;
   left: -27px;
-  background-color: #333333;
+  background-color: #2c292d;
 }
 
 .timeline-exp .timeline-wrapper .tl-item.pull-right h4 {
-  color: #333333;
+  color: #2c292d;
 }
 
 .timeline-exp .timeline-wrapper::before {
@@ -948,7 +948,7 @@ body.fixed-menu #burger-menu {
   margin-left: -1px;
   width: 2px;
   height: 100%;
-  background-color: #333333;
+  background-color: #ff6188;
 }
 
 /*
@@ -972,7 +972,7 @@ body.fixed-menu #burger-menu {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 14px;
-  color: #333333;
+  color: #ffd866;
   text-transform: uppercase;
   letter-spacing: 1px;
   float: left;
@@ -983,7 +983,7 @@ body.fixed-menu #burger-menu {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 14px;
-  color: #333333;
+  color: #ab9df2;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -995,7 +995,7 @@ body.fixed-menu #burger-menu {
 
 .progress-line .entry-line .current {
   height: 5px;
-  background-color: #333333;
+  background-color: #ff6188;
   width: 0%;
   position: relative;
   top: -5px;
@@ -1008,7 +1008,7 @@ body.fixed-menu #burger-menu {
   content: '';
   width: 17px;
   height: 17px;
-  background-color: #333333;
+  background-color: #ff6188;
   border-radius: 50%;
   position: absolute;
   right: -1px;
@@ -1034,21 +1034,21 @@ body.fixed-menu #burger-menu {
 }
 
 .pie-progress-wrapper .pie_progress path {
-  stroke: #333333 !important;
+  stroke: #ff6188 !important;
 }
 
 .pie-progress-wrapper .pie_progress .pie_progress__number {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 26px;
-  color: #333333;
+  color: #ab9df2;
 }
 
 .pie-progress-wrapper h4 {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 20px;
-  color: #333333;
+  color: #ffd866;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -1063,11 +1063,11 @@ body.fixed-menu #burger-menu {
   width: 113px;
   height: 113px;
   display: inline-block;
-  border: 2px solid #333333;
+  border: 2px solid #2c292d;
   border-radius: 50%;
   font-size: 50px;
   line-height: 113px;
-  color: #333333;
+  color: #2c292d;
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1099,7 +1099,7 @@ body.fixed-menu #burger-menu {
 }
 
 .info-circle .entry-circle svg path {
-  fill: #333333 !important;
+  fill: #2c292d !important;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1110,13 +1110,13 @@ body.fixed-menu #burger-menu {
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
-  color: #333333;
+  color: #2c292d;
   margin-top: 18px;
 }
 
 .info-circle:hover .entry-circle {
-  border-color: #4ac3bf;
-  background-color: #4ac3bf;
+  border-color: #78dce8;
+  background-color: #78dce8;
 }
 
 .info-circle:hover .entry-circle i {
@@ -1134,7 +1134,7 @@ body.fixed-menu #burger-menu {
 }
 
 .info-circle:hover h6 {
-  color: #4ac3bf;
+  color: #78dce8;
 }
 /* Icon Boxes
 ==================================================================*/
@@ -1155,8 +1155,8 @@ body.fixed-menu #burger-menu {
 
 .icon-boxes .box-item .entry-item {
   position: relative;
-  border: 2px solid #333333;
-  color: #333333;
+  border: 2px solid #2c292d;
+  color: #2c292d;
 }
 
 .icon-boxes .box-item .entry-item .image-block {
@@ -1192,7 +1192,7 @@ body.fixed-menu #burger-menu {
 
 .icon-boxes .box-item .entry-hover {
   position: absolute;
-  background-color: #333333;
+  background-color: #2c292d;
   color: #fff;
   left: 0px;
   right: 0px;
@@ -1281,11 +1281,11 @@ body.fixed-menu #burger-menu {
 }
 
 .accordion-container .accordion-group.active .accordion-header a {
-  color: #4ac3bf;
+  color: #78dce8;
 }
 
 .accordion-container .accordion-group.active .accordion-header span {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 
 .accordion-container .accordion-group.active .accordion-header span i {
@@ -1317,18 +1317,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  color: #2c292d;
 }
 
 blockquote {
-  border-left: 2px solid #4ac3bf;
+  border-left: 2px solid #78dce8;
   margin-left: 50px;
   padding-left: 30px;
   font-size: 17px;
   font-family: 'Lato';
   font-style: italic;
   font-weight: bold;
-  color: #333333;
+  color: #2c292d;
   line-height: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1337,7 +1337,7 @@ blockquote {
 .btn,
 button,
 input[type="submit"] {
-  background-color: #333333;
+  background-color: #2c292d;
   color: #fff;
   font-family: 'Lato';
   font-size: 13px;
@@ -1361,7 +1361,7 @@ input[type="submit"]:hover,
 .btn.active,
 button.active,
 input[type="submit"].active {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   color: #fff;
 }
 
@@ -1370,6 +1370,7 @@ input[type="submit"].active {
   padding-bottom: 90px;
   position: relative;
   overflow: hidden;
+  background-color: #fdf9f3;
 }
 
 .content.no-padding {
@@ -1410,8 +1411,8 @@ input[type="submit"].active {
 .pagination li span,
 .pagination li span:hover {
   color: #fff;
-  background-color: #4ac3bf;
-  border-color: #4ac3bf;
+  background-color: #78dce8;
+  border-color: #78dce8;
 }
 
 .title-404 {
@@ -1437,7 +1438,7 @@ input[type="submit"].active {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #4ac3bf;
+  color: #78dce8;
   position: relative;
   margin: 0px;
   margin-bottom: 40px;
@@ -1450,7 +1451,7 @@ input[type="submit"].active {
   width: 75px;
   left: 0px;
   bottom: -18px;
-  background-color: #333333;
+  background-color: #2c292d;
 }
 
 .list-details {
@@ -1462,7 +1463,7 @@ input[type="submit"].active {
 
 .list-details strong,
 .list-details b {
-  color: #333333;
+  color: #2c292d;
 }
 
 .labels {
@@ -1475,7 +1476,7 @@ input[type="submit"].active {
   display: inline-block;
   font-family: 'Lato';
   font-size: 12px;
-  color: #333333;
+  color: #2c292d;
   text-transform: uppercase;
   text-decoration: none;
   padding-left: 12px;
@@ -1515,12 +1516,12 @@ input[type="submit"].active {
 }
 
 .labels a:hover {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   color: #fff;
 }
 
 .labels a:hover::before {
-  border-right-color: #4ac3bf;
+  border-right-color: #78dce8;
 }
 
 [data-bg-image] {
@@ -1552,7 +1553,7 @@ input[type="submit"].active {
   font-weight: normal;
   line-height: 1.3em;
   letter-spacing: 1px;
-  color: #4ac3bf;
+  color: #78dce8;
   margin-bottom: 20px;
 }
 
@@ -1612,7 +1613,7 @@ ul.socials li a {
   width: 43px;
   height: 43px;
   line-height: 43px;
-  background-color: #333333;
+  background-color: #2c292d;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -1624,7 +1625,7 @@ ul.socials li a {
 }
 
 ul.socials li a:hover {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 
 form .col-md-6:nth-child(2n+1) {
@@ -1643,7 +1644,7 @@ form textarea {
   font-family: 'Lato';
   font-size: 13px;
   text-transform: uppercase;
-  color: #333333;
+  color: #2c292d;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -1652,8 +1653,8 @@ form textarea {
 form input:not([type="submit"]):focus,
 form textarea:focus {
   outline: none;
-  border-bottom-color: #4ac3bf;
-  color: #4ac3bf;
+  border-bottom-color: #78dce8;
+  color: #78dce8;
 }
 
 form textarea {
@@ -1731,7 +1732,7 @@ address table td:first-child {
 }
 
 .blog-posts article.post-item .entry-item .entry-meta .entry-date .day {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   display: block;
   height: 50px;
   line-height: 50px;
@@ -1739,7 +1740,7 @@ address table td:first-child {
 }
 
 .blog-posts article.post-item .entry-item .entry-meta .entry-date .month {
-  background-color: #333333;
+  background-color: #2c292d;
   display: block;
   height: 50px;
   line-height: 50px;
@@ -1763,12 +1764,12 @@ address table td:first-child {
   margin: 0px;
   max-height: 44px;
   overflow: hidden;
-  color: #333333;
+  color: #2c292d;
 }
 
 .blog-posts article.post-item .entry-item .entry-meta .entry-title h1 a,
 .blog-posts article.post-item .entry-item .entry-meta .entry-title h3 a {
-  color: #333333;
+  color: #2c292d;
 }
 
 .blog-posts article.post-item .entry-item .entry-meta .entry-title .entry-author {
@@ -1801,7 +1802,7 @@ address table td:first-child {
 .blog-posts article.post-item .entry-item .entry-hover .post-format {
   font-size: 36px;
   display: inline-block;
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   color: #fff;
   padding: 15px 20px;
   border-radius: 3px;
@@ -1832,12 +1833,12 @@ address table td:first-child {
   font-family: 'Lato';
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #333333;
+  background-color: #2c292d;
   line-height: 40px;
 }
 
 .blog-posts .blog-links .link-next {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 
 .blog-content .meta-blocks {
@@ -1847,7 +1848,7 @@ address table td:first-child {
 
 .blog-content .meta-blocks span {
   display: inline-block;
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   color: #fff;
   font-family: 'Lato';
   font-weight: normal;
@@ -1872,7 +1873,7 @@ address table td:first-child {
 
 .blog-content .category-blocks a {
   display: inline-block;
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   color: #fff;
   font-family: 'Lato';
   font-weight: normal;
@@ -1889,7 +1890,7 @@ address table td:first-child {
   font-family: 'Lato';
   font-size: 16px;
   font-weight: bold;
-  color: #333333;
+  color: #2c292d;
   text-transform: uppercase;
 }
 
@@ -1898,7 +1899,7 @@ address table td:first-child {
   width: 34px;
   height: 34px;
   line-height: 34px;
-  background-color: #333333;
+  background-color: #2c292d;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -1914,7 +1915,7 @@ address table td:first-child {
 }
 
 .blog-content .share-blocks a:hover {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 /* Comments
 ====================================*/
@@ -1923,7 +1924,7 @@ address table td:first-child {
   font-family: 'Oswald';
   font-size: 22px;
   font-weight: normal;
-  color: #4ac3bf;
+  color: #78dce8;
   text-transform: uppercase;
   margin-bottom: 50px;
   letter-spacing: 1px;
@@ -1968,7 +1969,7 @@ address table td:first-child {
   font-family: 'Lato';
   font-size: 14px;
   font-style: italic;
-  color: #4ac3bf;
+  color: #78dce8;
   text-transform: uppercase;
 }
 
@@ -1981,7 +1982,7 @@ address table td:first-child {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #333333;
+  color: #2c292d;
   display: block;
 }
 
@@ -2009,7 +2010,7 @@ address table td:first-child {
   font-family: 'Oswald';
   font-size: 22px;
   font-weight: normal;
-  color: #4ac3bf;
+  color: #78dce8;
   text-transform: uppercase;
   margin-bottom: 50px;
   letter-spacing: 1px;
@@ -2031,7 +2032,7 @@ address table td:first-child {
   font-family: 'Lato';
   font-size: 13px;
   text-transform: uppercase;
-  color: #333333;
+  color: #2c292d;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -2040,8 +2041,8 @@ address table td:first-child {
 #respond .comment-form input:not([type="submit"]):focus,
 #respond .comment-form textarea:focus {
   outline: none;
-  border-bottom-color: #4ac3bf;
-  color: #4ac3bf;
+  border-bottom-color: #78dce8;
+  color: #78dce8;
 }
 
 #respond .comment-form textarea {
@@ -2167,12 +2168,12 @@ address table td:first-child {
   font-family: 'Lato';
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #333333;
+  background-color: #2c292d;
   line-height: 40px;
 }
 
 .portfolio-links .link-next {
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 /* Widgets
 ====================================*/
@@ -2228,10 +2229,10 @@ address table td:first-child {
 
 .widget ul li:hover a{
   text-decoration: none;
-  color: #4ac3bf;
+  color: #78dce8;
 }
 .widget ul li:hover .count{
-  background-color: #4ac3bf;
+  background-color: #78dce8;
 }
 
 .widget .widget-tags{
@@ -2246,7 +2247,7 @@ address table td:first-child {
   margin-bottom: 8px;
 }
 .widget .widget-tags a:hover{
-  background-color: #4ac3bf;
+  background-color: #78dce8;
   text-decoration: none;
 }
 
@@ -2290,7 +2291,7 @@ address table td:first-child {
   font-size: 14px;
   line-height: 1.7em;
   font-family: 'Lato';
-  color: #333333;
+  color: #2c292d;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -2300,7 +2301,7 @@ address table td:first-child {
 }
 
 #footer a {
-  color: #4ac3bf;
+  color: #78dce8;
   text-decoration: none;
 }
 
@@ -2328,7 +2329,7 @@ address table td:first-child {
 }
 
 #footer ul.social li a:hover {
-  color: #4ac3bf;
+  color: #78dce8;
 }
 /* Responsive
 ====================================*/

@@ -5,7 +5,7 @@
 {% block metatitle %}Resume{% endblock %}
 
 {% block header %}
-{% include "base/header.html" with title="Hoja de vida" description="Preperación y habilidades" %}
+{% include "base/header.html" with title="Hoja de vida" description="Preparación y habilidades" %}
 {% endblock %}
 
 {% block content %}
@@ -44,9 +44,11 @@
                             <div class="caption">{{ object.start_date|date:"Y / M" }}  -  {{ object.ends_date|date:"Y / M"|default:"Actualmente" }}</div>
                             <h4>{{ object.jobexperience.job_position }}</h4>
                             <p>{{ object.jobexperience.institution }}</p>
-                            {% for activity in object.jobexperience.jobactivity_set.all %}
-                            <p>- {{ activity.description }}</p>
-                            {% endfor %}
+                            <ul class="check-list">
+                                {% for activity in object.jobexperience.jobactivity_set.all %}
+                                <li>{{ activity.description }}</li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
                     {% else %}
@@ -73,7 +75,7 @@
     </div>
 </div>
 
-<div data-bg-color="#f6f6f6">
+<div data-bg-color="#2c292d">
 <div class="container padding4x">
     <div class="row">
         <div class="col-md-12">
@@ -136,7 +138,7 @@
     </div>
 </div>
 
-<div data-bg-color="#f6f6f6">
+<div data-bg-color="#2c292d">
     <div class="container padding4x">
         <div class="row">
             <div class="col-md-12">
