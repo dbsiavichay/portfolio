@@ -61,7 +61,6 @@
                             <h4>{{ object.jobtitle.name }}</h4>
                             <p>{{ object.jobtitle.institution }}</p>
                             <p>{{ object.jobtitle.level }}</p>
-                            <p>{% if object.jobtitle.senescyt_number %}Registro Senescyt: {{ object.jobtitle.senescyt_number }} {% endif %}</p>
                         </div>
                     </div>
                     {% endif %}
@@ -112,30 +111,11 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-offset-3 col-md-3 col-sm-6 col-xs-12">
-            <ul class="check-list">
-                <li>install and configure</li>
-                <li>web usability</li>
-                <li>digital painting</li>
-                <li>grid and layout</li>
-                <li>mobile app design</li>
-                <li>graphical design</li>
-                <li>seo optimization</li>
-            </ul>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <ul class="check-list">
-                <li>ux and ui design</li>
-                <li>logo design</li>
-                <li>3d animation</li>
-                <li>audio & video editing</li>
-                <li>photography</li>
-                <li>web development</li>
-                <li>digital marketing</li>
-            </ul>
-        </div>
-    </div>
+    <ul class="row check-list">
+        {% for knowledge in knowledges %}
+        <li class="col-md-4 col-sm-6 col-xs-12">{{ knowledge.name }}</li>
+        {% endfor %}
+    </ul>
 </div>
 
 <div data-bg-color="#2c292d">
@@ -171,94 +151,41 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            
-            <div class="icon-boxes">
-                
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-1.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>Swimming</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-2.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>photography</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-3.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>photography</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-4.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>photography</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-5.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>photography</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-3.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>photography</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="box-item">
-                    <div class="entry-item">
-                        <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
-                        <span style="background-image:url(/static/images/pages/resume/s-6.png);"></span>
-                    </div>
-                    <div class="entry-hover">
-                        <h6>photography</h6>
-                        <p>To explore strange new worlds to seek out new life and new civilizations.</p>
-                    </div>
-                </div>
-
-                <div class="clearfix"></div>
-
+    <div class="row icon-boxes">
+        <div class="box-item col-sm-offset-3 col-sm-2">
+            <div class="entry-item">
+                <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
+                <span style="background-image:url(/static/images/pages/resume/bbq.png);"></span>
             </div>
-
+            <div class="entry-hover">
+                <h6>Parrillar</h6>
+                <p>Asar y ahumar, probar diferentes cortes de carnes en varias preparaciones.</p>
+            </div>
         </div>
-    </div>
 
+        <div class="box-item col-sm-2">
+            <div class="entry-item">
+                <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
+                <span style="background-image:url(/static/images/pages/resume/microphone.png);"></span>
+            </div>
+            <div class="entry-hover">
+                <h6>Cantar</h6>
+                <p>A veces asisto a karaokes con familiares y amigos donde practico el canto.</p>
+            </div>
+        </div>
+
+        <div class="box-item col-sm-2">
+            <div class="entry-item">
+                <img src="{% static 'images/1x1.png' %}" class="image-block" alt="image sizer">
+                <span style="background-image:url(/static/images/pages/resume/traveler.png);"></span>
+            </div>
+            <div class="entry-hover">
+                <h6>Viajar</h6>
+                <p>Conocer varios lugares y gente nueva, adquirir experiencias de vida.</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
 </div>
 {% endblock %}

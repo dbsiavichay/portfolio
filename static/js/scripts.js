@@ -75,14 +75,6 @@
 		});
 
 
-		$('.icon-boxes').each(function(){
-			var $box = $(this);
-			$box.find('.box-item').css({
-				'width': 100/$box.find('.box-item').length + '%'
-			});
-		});
-
-
 		// Timeline
 		/*
 		$('.timeline-exp').each(function(){

@@ -85,6 +85,18 @@ class Skill(models.Model):
         return self.name
 
 
+class Knowledge(models.Model):
+    name = models.CharField(max_length=64, verbose_name='nombre')
+    order = models.PositiveSmallIntegerField(default=1)
+
+    class Meta:
+        verbose_name = 'conocimiento'
+        ordering = ('order',)
+
+    def __str__(self):
+        return self.name
+
+
 class Language(models.Model):
     name = models.CharField(max_length=64, verbose_name='nombre')
     percent = models.PositiveSmallIntegerField(

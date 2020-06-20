@@ -1141,15 +1141,9 @@ body.fixed-menu #burger-menu {
 
 .icon-boxes {
   position: relative;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .icon-boxes .box-item {
-  float: left;
-  width: 20%;
-  padding-left: 15px;
-  padding-right: 15px;
   position: relative;
 }
 
@@ -1366,8 +1360,6 @@ input[type="submit"].active {
 }
 
 .content {
-  /*padding-top: 90px;*/
-  padding-bottom: 90px;
   position: relative;
   overflow: hidden;
   background-color: #fdf9f3;
@@ -2462,7 +2454,8 @@ address table td:first-child {
   /* Icon Boxes */
 
   .icon-boxes .box-item {
-    width: 33.333% !important;
+    width: 70% !important;
+    margin: auto;
     margin-bottom: 30px;
   }
 
