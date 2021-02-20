@@ -1,5 +1,7 @@
 {% extends "base/base.html" %}
 
+{% load static %}
+
 {% block content %}
 <!-- Home Subpage -->
 <section data-id="home" class="animated-section start-page">
@@ -34,7 +36,7 @@
         <!-- Personal Information -->
         <div class="row">
         <div class="col-xs-12 col-sm-7">
-            <p>Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue elit vel odio suscipit, sit amet tempor nisl imperdiet. Quisque ex justo, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum condimentum dictum et vel massa. Ut in imperdiet dolor, vel consectetur dui.</p>
+            <p>Soy Denis Siavichay, Desarrollador de Software, Ingeniero en sistemas, Master en Ingenería de Software por la Universidad Internacional de la Rioja. Apasionado por la tecnología y el desarrollo de software, disfruto mucho programar y construir soluciones informáticas de calidad y eficientes, estoy siempre en constante aprendizaje y pendiente de las tendencias tecnológicas de mi entorno profesional.</p>
         </div>
 
         <div class="col-xs-12 col-sm-5">
@@ -82,53 +84,29 @@
         </div>
 
         <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="col-inner">
-            <div class="info-list-w-icon">
-                <div class="info-block-w-icon">
-                <div class="ci-icon">
-                    <i class="lnr lnr-store"></i>
-                </div>
-                <div class="ci-text">
-                    <h4>Ecommerce</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                </div>
-                </div>
-                <div class="info-block-w-icon">
-                <div class="ci-icon">
-                    <i class="lnr lnr-laptop-phone"></i>
-                </div><div class="ci-text">
-                    <h4>Web Design</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6">
-            <div class="col-inner">
-            <div class="info-list-w-icon">
-                <div class="info-block-w-icon">
-                <div class="ci-icon">
-                    <i class="lnr lnr-pencil"></i>
-                </div>
-                <div class="ci-text">
-                    <h4>Copywriting</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
-                </div>
-                </div>
-                <div class="info-block-w-icon">
-                <div class="ci-icon">
-                    <i class="lnr lnr-flag"></i>
-                </div><div class="ci-text">
-                    <h4>Management</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+            <div class="col-xs-12 col-sm-12">
+                <div class="col-inner">
+                <div class="info-list-w-icon">
+                    <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div><div class="ci-text">
+                            <h4>Backend Development</h4>
+                            <p>I like to code things that help me to grow up.</p>
+                        </div>
+                    </div>
+                    <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                            <i class="lnr lnr-store"></i>
+                        </div>
+                        <div class="ci-text">
+                            <h4>Ecommerce</h4>
+                            <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                        </div>
+                    </div>
                 </div>
                 </div>
             </div>
-            </div>
-        </div>
         </div>
         <!-- End of Services -->
 
@@ -181,290 +159,262 @@
 
 <!-- Resume Subpage -->
 <section data-id="resume" class="animated-section">
-<div class="page-title">
-    <h2>Resume</h2>
-</div>
+    <div class="page-title">
+        <h2>Resume</h2>
+    </div>
 
-<div class="section-content">
+    <div class="section-content">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7">
+                <div class="block-title">
+                    <h3>Education</h3>
+                </div>
+                
+                <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">2019</h5>
+                            <span class="item-company">Universidad Internacional de la Rioja</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">Master in Software Engineering</h4>
+                            <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                        </div>
+                    </div>
 
-    <div class="row">
-    <div class="col-xs-12 col-sm-7">
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                        <h5 class="item-period">2015</h5>
+                        <span class="item-company">Escuela Superior Politécnica del Chimborazo</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                        <h4 class="item-title">Systems Engineering</h4>
+                        <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="block-title">
-        <h3>Education</h3>
-        </div>
-        
-        <div class="timeline timeline-second-style clearfix">
-        <div class="timeline-item clearfix">
-            <div class="left-part">
-            <h5 class="item-period">2008</h5>
-            <span class="item-company">University of Studies</span>
-            </div>
-            <div class="divider"></div>
-            <div class="right-part">
-            <h4 class="item-title">Frontend Development</h4>
-            <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-            </div>
-        </div>
+                <div class="white-space-50"></div>
 
-        <div class="timeline-item clearfix">
-            <div class="left-part">
-            <h5 class="item-period">2007</h5>
-            <span class="item-company">University of Studies</span>
+                <div class="block-title">
+                    <h3>Experience</h3>
+                </div>
+
+                <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">2019 - Current</h5>
+                            <span class="item-company">Gobierno Municipal del Cantón Morona</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">Software Developer</h4>
+                            <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">2015 - 2019</h5>
+                            <span class="item-company">Gobierno Municipal del Cantón Morona</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">Systems Analyst</h4>
+                            <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">2013 - 2015</h5>
+                            <span class="item-company"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">Freelancer</h4>
+                            <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="divider"></div>
-            <div class="right-part">
-            <h4 class="item-title">Graphic Design</h4>
-            <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
+
+            <!-- Skills & Certificates -->
+            <div class="col-xs-12 col-sm-5">
+                <!-- Coding Skills -->
+                <div class="block-title">
+                    <h3>Coding <span>Skills</span></h3>
+                </div>
+
+                <div class="skills-info skills-second-style">
+                    <!-- Skill 1 -->
+                    <div class="skill clearfix">
+                        <h4>Python</h4>
+                        <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-1">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 1 -->
+                
+                    <!-- Skill 2 -->
+                    <div class="skill clearfix">
+                        <h4>Django</h4>
+                        <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container skill-2">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 2 -->
+                
+                    <!-- Skill 3 -->
+                    <div class="skill clearfix">
+                        <h4>HTML</h4>
+                        <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-3">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 3 -->
+                
+                    <!-- Skill 4 -->
+                    <div class="skill clearfix">
+                        <h4>CSS</h4>
+                        <div class="skill-value">80%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 4 -->
+
+                    <!-- Skill 5 -->
+                    <div class="skill clearfix">
+                        <h4>JavaScript</h4>
+                        <div class="skill-value">80%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 5 -->
+
+                </div>
+                <!-- End of Coding Skills -->
+
+                <div class="white-space-10"></div>
+
+                <!-- Dev tools -->
+                <div class="block-title">
+                    <h3>Dev <span>Tools</span></h3>
+                </div>
+
+                <ul class="knowledges">
+                    <li>Terminal</li>
+                    <li>Vim</li>
+                    <li>VS Code</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>Gitlab</li>
+                    <li>Chrome</li>
+                </ul>
+                <!-- End dev tools -->
             </div>
-        </div>
+            <!-- End of Skills & Certificates -->
         </div>
 
         <div class="white-space-50"></div>
 
-        <div class="block-title">
-        <h3>Experience</h3>
-        </div>
-
-        <div class="timeline timeline-second-style clearfix">
-        <div class="timeline-item clearfix">
-            <div class="left-part">
-            <h5 class="item-period">2016 - Current</h5>
-            <span class="item-company">Google</span>
-            </div>
-            <div class="divider"></div>
-            <div class="right-part">
-            <h4 class="item-title">Lead Ui/Ux Designer</h4>
-            <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item clearfix">
-            <div class="left-part">
-            <h5 class="item-period">2013 - 2016</h5>
-            <span class="item-company">Adobe</span>
-            </div>
-            <div class="divider"></div>
-            <div class="right-part">
-            <h4 class="item-title">Senior Ui/Ux Designer</h4>
-            <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+        <!-- Certificates -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                    <h3>Certificates</h3>
+                </div>
             </div>
         </div>
         
-        <div class="timeline-item clearfix">
-            <div class="left-part">
-            <h5 class="item-period">2011 - 2013</h5>
-            <span class="item-company">Google</span>
+        <div class="row">
+            <!-- Certificate 1 -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="certificate-item clearfix">
+                <div class="certi-logo">
+                    <img src="{% static 'img/certificates/python-django.webp' %}" alt="logo">
+                </div>
+                
+                <div class="certi-content">
+                    <div class="certi-title">
+                        <h4>Python and Django</h4>
+                    </div>
+                    <div class="certi-id">
+                        <span><a target="_blank" href="https://platzi.com/p/dbsiavichay/ruta/3-backend-python/diploma/detalle/">Check certificate</a></span>
+                    </div>
+                    <div class="certi-date">
+                        <span>04 March 2020</span>
+                    </div>
+                    <div class="certi-company">
+                        <span>Platzi</span>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="divider"></div>
-            <div class="right-part">
-            <h4 class="item-title">Junior Ui/Ux Designer</h4>
-            <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac, sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
-            </div>
-        </div>
-        </div>
+            <!-- End of Certificate 1 -->
 
+            <!-- Certificate 2 -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="certificate-item clearfix">
+                <div class="certi-logo">
+                    <img src="{% static 'img/certificates/git-github.webp' %}" alt="logo">
+                </div>
+                
+                <div class="certi-content">
+                    <div class="certi-title">
+                        <h4>Git and Github</h4>
+                    </div>
+                    <div class="certi-id">
+                        <span><a target="_blank" href="https://platzi.com/p/dbsiavichay/curso/1557-git-github/diploma/detalle/">Check certificate</a></span>
+                    </div>
+                    <div class="certi-date">
+                        <span>17 Decembre 2019</span>
+                    </div>
+                    <div class="certi-company">
+                        <span>Platzi</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End of Certificate 2 -->
+
+            <!-- Certificate 3 -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="certificate-item clearfix">
+                <div class="certi-logo">
+                    <img src="{% static 'img/certificates/docker.webp' %}" alt="logo">
+                </div>
+                
+                <div class="certi-content">
+                    <div class="certi-title">
+                        <h4>Docker Basics</h4>
+                    </div>
+                    <div class="certi-id">
+                        <span><a target="_blank" href="https://platzi.com/p/dbsiavichay/curso/1432-docker-2018/diploma/detalle/">Check certificate</a></span>
+                    </div>
+                    <div class="certi-date">
+                        <span>12 May 2020</span>
+                    </div>
+                    <div class="certi-company">
+                        <span>Platzi</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End of Certificate 3 -->
+
+            
+        </div>
+        <!-- End of Certificates -->
     </div>
-
-    <!-- Skills & Certificates -->
-    <div class="col-xs-12 col-sm-5">
-        <!-- Design Skills -->
-        <div class="block-title">
-        <h3>Design <span>Skills</span></h3>
-        </div>
-
-        <div class="skills-info skills-second-style">
-        <!-- Skill 1 -->
-        <div class="skill clearfix">
-            <h4>Web Design</h4>
-            <div class="skill-value">95%</div>
-        </div>
-        <div class="skill-container skill-1">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 1 -->
-        
-        <!-- Skill 2 -->
-        <div class="skill clearfix">
-            <h4>Print Design</h4>
-            <div class="skill-value">65%</div>
-        </div>
-        <div class="skill-container skill-2">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 2 -->
-        
-        <!-- Skill 3 -->
-        <div class="skill clearfix">
-            <h4>Logo Design</h4>
-            <div class="skill-value">80%</div>
-        </div>
-        <div class="skill-container skill-3">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 3 -->
-        
-        <!-- Skill 4 -->
-        <div class="skill clearfix">
-            <h4>Graphic Design</h4>
-            <div class="skill-value">90%</div>
-        </div>
-        <div class="skill-container skill-4">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 4 -->
-
-        </div>
-        <!-- End of Design Skills -->
-
-        <div class="white-space-10"></div>
-
-        <!-- Coding Skills -->
-        <div class="block-title">
-        <h3>Coding <span>Skills</span></h3>
-        </div>
-
-        <div class="skills-info skills-second-style">
-        <!-- Skill 5 -->
-        <div class="skill clearfix">
-            <h4>JavaScript</h4>
-            <div class="skill-value">95%</div>
-        </div>
-        <div class="skill-container skill-5">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 5 -->
-
-        <!-- Skill 6 -->
-        <div class="skill clearfix">
-            <h4>PHP</h4>
-            <div class="skill-value">85%</div>
-        </div>
-        <div class="skill-container skill-6">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 6 -->
-        
-        <!-- Skill 7 -->
-        <div class="skill clearfix">
-            <h4>HTML/CSS</h4>
-            <div class="skill-value">100%</div>
-        </div>
-        <div class="skill-container skill-7">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 7 -->
-        
-        <!-- Skill 8 -->
-        <div class="skill clearfix">
-            <h4>Smarty/Twig</h4>
-            <div class="skill-value">75%</div>
-        </div>
-        <div class="skill-container skill-8">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 8 -->
-
-        <!-- Skill 9 -->
-        <div class="skill clearfix">
-            <h4>Perl</h4>
-            <div class="skill-value">90%</div>
-        </div>
-        <div class="skill-container skill-9">
-            <div class="skill-percentage"></div>
-        </div>
-        <!-- End of Skill 9 -->
-        </div>
-        <!-- End of Coding Skills -->
-
-        <div class="white-space-10"></div>
-
-        <!-- Knowledges -->
-        <div class="block-title">
-        <h3>Knowledges</h3>
-        </div>
-
-        <ul class="knowledges">
-        <li>Marketing</li>
-        <li>Print</li>
-        <li>Digital Design</li>
-        <li>Social Media</li>
-        <li>Time Management</li>
-        <li>Communication</li>
-        <li>Problem-Solving</li>
-        <li>Social Networking</li>
-        <li>Flexibility</li>
-        </ul>
-        <!-- End of Knowledges -->
-    </div>
-    <!-- End of Skills & Certificates -->
-    </div>
-
-    <div class="white-space-50"></div>
-
-    <!-- Certificates -->
-    <div class="row">
-    <div class="col-xs-12 col-sm-12">
-        <div class="block-title">
-        <h3>Certificates</h3>
-        </div>
-    </div>
-    </div>
-    
-    <div class="row">
-    <!-- Certificate 1 -->
-    <div class="col-xs-12 col-sm-6">
-        <div class="certificate-item clearfix">
-        <div class="certi-logo">
-            <img src="img/clients/client-1.png" alt="logo">
-        </div>
-        
-        <div class="certi-content">
-            <div class="certi-title">
-            <h4>Psyhology of Intertnation Design</h4>
-            </div>
-            <div class="certi-id">
-            <span>Membership ID: XXXX</span>
-            </div>
-            <div class="certi-date">
-            <span>19 April 2018</span>
-            </div>
-            <div class="certi-company">
-            <span></span>
-            </div>
-        </div>
-        </div>
-    </div>
-    <!-- End of Certificate 1 -->
-
-    <!-- Certificate 2 -->
-    <div class="col-xs-12 col-sm-6">
-        <div class="certificate-item clearfix">
-        <div class="certi-logo">
-            <img src="img/clients/client-1.png" alt="logo">
-        </div>
-        
-        <div class="certi-content">
-            <div class="certi-title">
-            <h4>Psyhology of Intertnation Design</h4>
-            </div>
-            <div class="certi-id">
-            <span>Membership ID: XXXX</span>
-            </div>
-            <div class="certi-date">
-            <span>19 April 2018</span>
-            </div>
-            <div class="certi-company">
-            <span></span>
-            </div>
-        </div>
-        </div>
-    </div>
-    <!-- End of Certificate 2 -->
-
-    </div>
-    <!-- End of Certificates -->
-</div>
 </section>
 <!-- End of Resume Subpage -->
 
@@ -693,94 +643,55 @@
 </div>
 
 <div class="section-content">
-
     <div class="row">
-    <!-- Contact Info -->
-    <div class="col-xs-12 col-sm-4">
-        <div class="lm-info-block gray-default">
-        <i class="lnr lnr-map-marker"></i>
-        <h4>San Francisco</h4>
-        <span class="lm-info-block-value"></span>
-        <span class="lm-info-block-text"></span>
-        </div>
-
-        <div class="lm-info-block gray-default">
-        <i class="lnr lnr-phone-handset"></i>
-        <h4>415-832-2000</h4>
-        <span class="lm-info-block-value"></span>
-        <span class="lm-info-block-text"></span>
-        </div>
-
-        <div class="lm-info-block gray-default">
-        <i class="lnr lnr-envelope"></i>
-        <h4>alex@example.com</h4>
-        <span class="lm-info-block-value"></span>
-        <span class="lm-info-block-text"></span>
-        </div>
-
-        <div class="lm-info-block gray-default">
-        <i class="lnr lnr-checkmark-circle"></i>
-        <h4>Freelance Available</h4>
-        <span class="lm-info-block-value"></span>
-        <span class="lm-info-block-text"></span>
-        </div>
-
-
-    </div>
-    <!-- End of Contact Info -->
-
-    <!-- Contact Form -->
-    <div class="col-xs-12 col-sm-8">
-        <div id="map" class="map"></div>
-        <div class="block-title">
-        <h3>How Can I <span>Help You?</span></h3>
-        </div>
-
-        <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
-
-        <div class="messages"></div>
-
-        <div class="controls two-columns">
-            <div class="fields clearfix">
-            <div class="left-column">
-                <div class="form-group form-group-with-icon">
-                <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
-                <label>Full Name</label>
-                <div class="form-control-border"></div>
-                <div class="help-block with-errors"></div>
-                </div>
-
-                <div class="form-group form-group-with-icon">
-                <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
-                <label>Email Address</label>
-                <div class="form-control-border"></div>
-                <div class="help-block with-errors"></div>
-                </div>
-
-                <div class="form-group form-group-with-icon">
-                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
-                <label>Subject</label>
-                <div class="form-control-border"></div>
-                <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="right-column">
-                <div class="form-group form-group-with-icon">
-                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                <label>Message</label>
-                <div class="form-control-border"></div>
-                <div class="help-block with-errors"></div>
-                </div>
-            </div>
+        <!-- Contact Form -->
+        <div class="col-xs-12 col-sm-12">
+            <div class="block-title">
+                <h3>Interested in working together? <span>Email me.</span></h3>
             </div>
 
-            <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-theme="dark"></div>
+            <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+                <div class="messages"></div>
+                <div class="controls two-columns">
+                    <div class="fields clearfix">
+                    <div class="left-column">
+                        <div class="form-group form-group-with-icon">
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                        <label>Full Name</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                        </div>
 
-            <input type="submit" class="button btn-send" value="Send message">
+                        <div class="form-group form-group-with-icon">
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                        <label>Email Address</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group form-group-with-icon">
+                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
+                        <label>Subject</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="form-group form-group-with-icon">
+                        <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                        <label>Message</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <input type="submit" class="button btn-send" value="Send message">
+                </div>
+            </form>
         </div>
-        </form>
-    </div>
-    <!-- End of Contact Form -->
+        <!-- End of Contact Form -->
     </div>
 
 </div>
