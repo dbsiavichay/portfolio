@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% block metatitle %}{% endblock %} | Denis Siavichay</title>
-	<meta name="keywords" content="Python,Django,HTML5,CSS3,HTML,Resume,CV" >
-	<meta name="description" content="Denis Siavichay resume, portfolio and blog">
-
-    {%include "base/css.html" %}
-
-</head>
-<body class="animsition">
-{% include "base/navbar.html" %}
-
-{% block header %}{% endblock %}
-
-<!-- Content section
-================================================== -->
-<section class="content">
-	{% block content %}{% endblock %}
-</section>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Denis Siavichay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Denis Siavichay resume and portfolio" />
+    <meta name="keywords" content="dbsiavichay, denis, siavichay, resume, portfolio" />
+    <meta name="author" content="dbsiavichay" />
+    <link rel="shortcut icon" href="favicon.ico">
 
 
-{% include 'base/footer.html' %}
+    {% include "base/css.html" %}
+  </head>
 
-{% include "base/js.html" %}
-</body>
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          {% include "base/header.html" %}
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+              {% block content %}{% endblock %}
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    {% include "base/js.html" %}
+  </body>
 </html>
