@@ -14,6 +14,7 @@ django = "==3.0.6"
 environs = "*"
 psycopg2 = "*"
 pillow = "*"
+markdown = "*"
 
 [requires]
 python_version = "3.7"

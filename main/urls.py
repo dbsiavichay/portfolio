@@ -31,4 +31,8 @@ urlpatterns = [
         'portfolio/',
         include(('apps.portfolio.urls', 'portfolio'), namespace='portfolio'),
     ),
+    path(
+        'blog/',
+        include(('apps.blog.urls', 'blog'), namespace='blog'),
+    ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
