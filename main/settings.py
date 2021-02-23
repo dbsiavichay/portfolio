@@ -43,12 +43,15 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'anymail',
+]
 
 LOCAL_APPS = [
     'apps.resume',
     'apps.portfolio',
     'apps.blog',
+    'apps.contact',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -144,3 +147,13 @@ STATICFILES_DIRS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# Email
+
+ANYMAIL = {
+    "MAILJET_API_KEY": env("MAILJET_API_KEY"),
+    "MAILJET_SECRET_KEY": env("MAILJET_SECRET_KEY"),
+}
+
+EMAIL_BACKEND = "anymail.backends.mailjet.EmailBackend"
+DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')

@@ -69,29 +69,28 @@
 
         $('#contact_form').validator();
 
-        $('#contact_form').on('submit', function (e) {
-            if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
+        document.querySelector('#contact_form').addEventListener('submit', async e => {
+            e.preventDefault()
+            const url = e.currentTarget.action;
+            const form_data = new FormData(e.currentTarget)
 
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(),
-                    success: function (data)
-                    {
-                        var messageAlert = 'alert-' + data.type;
-                        var messageText = data.message;
+            let response = await fetch(url, {
+                method: 'POST',
+                body: form_data,
+                credentials: 'include',
+            });
 
-                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                        if (messageAlert && messageText) {
-                            $('#contact_form').find('.messages').html(alertBox);
-                            $('#contact_form')[0].reset();
-                        }
-                    }
-                });
-                return false;
+            let data = await response.json();
+
+            var messageType = data.type;
+            var messageText = data.message;
+
+            if (messageType && messageText) {
+                toastr[messageType](messageText)
             }
+            return false;
         });
+            
     });
     // /Contact form validator
 

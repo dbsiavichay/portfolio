@@ -35,4 +35,8 @@ urlpatterns = [
         'blog/',
         include(('apps.blog.urls', 'blog'), namespace='blog'),
     ),
+    path(
+        'contact/',
+        include(('apps.contact.urls', 'contact'), namespace='contact')
+    )
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

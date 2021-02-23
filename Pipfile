@@ -15,6 +15,7 @@ environs = "*"
 psycopg2 = "*"
 pillow = "*"
 markdown = "*"
+django-anymail = {extras = ["mailjet"], version = "*"}
 
 [requires]
 python_version = "3.7"
