@@ -390,94 +390,93 @@
 
 <!-- Portfolio Subpage -->
 <section data-id="portfolio" class="animated-section">
-<div class="page-title">
-    <h2>Portfolio</h2>
-</div>
+    <div class="page-title">
+        <h2>Portfolio</h2>
+    </div>
 
-<div class="section-content">
+    <div class="section-content">
+        <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <!-- Portfolio Content -->
+            <div class="portfolio-content">
 
-    <div class="row">
-    <div class="col-xs-12 col-sm-12">
-        <!-- Portfolio Content -->
-        <div class="portfolio-content">
+            <ul class="portfolio-filters">
+                <li class="active">
+                    <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                </li>
+                <li>
+                    <a class="filter btn btn-sm btn-link" data-group="category_django">Django</a>
+                </li>
+                <li>
+                    <a class="filter btn btn-sm btn-link" data-group="category_nodejs">NodeJS</a>
+                </li> 
+                <li>
+                    <a class="filter btn btn-sm btn-link" data-group="category_libs">Libraries</a>
+                </li>
+            </ul>
 
-        <ul class="portfolio-filters">
-            <li class="active">
-                <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
-            </li>
-            <li>
-                <a class="filter btn btn-sm btn-link" data-group="category_django">Django</a>
-            </li>
-            <li>
-                <a class="filter btn btn-sm btn-link" data-group="category_nodejs">NodeJS</a>
-            </li> 
-            <li>
-                <a class="filter btn btn-sm btn-link" data-group="category_libs">Libraries</a>
-            </li>
-        </ul>
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid three-columns">
+                <figure class="item standard" data-groups='["category_all", "category_django"]'>
+                    <div class="portfolio-item-img">
+                        <img src="{% static 'img/portfolio/sirpro.jpg' %}" alt="Sirpro" title="" />
+                        <a href="http://178.128.191.185/" target="_blank"></a>
+                    </div>
 
-        <!-- Portfolio Grid -->
-        <div class="portfolio-grid three-columns">
-            <figure class="item standard" data-groups='["category_all", "category_django"]'>
-                <div class="portfolio-item-img">
-                    <img src="{% static 'img/portfolio/1.jpg' %}" alt="Sirpro" title="" />
-                    <a href="http://178.128.191.185/" target="_blank"></a>
-                </div>
+                    <i class="far fa-file-alt"></i>
+                    <h4 class="name">Sirpro</h4>
+                    <span class="category">Django</span>
+                </figure>
 
-                <i class="far fa-file-alt"></i>
-                <h4 class="name">Sirpro</h4>
-                <span class="category">Django</span>
-            </figure>
+                <figure class="item standard" data-groups='["category_all", "category_django"]'>
+                    <div class="portfolio-item-img">
+                        <img src="{% static 'img/portfolio/resume.jpg' %}" alt="Resume" title="" />
+                        <a href="http://dbsiavichay.com/" target="_blank"></a>
+                    </div>
 
-            <figure class="item standard" data-groups='["category_all", "category_django"]'>
-                <div class="portfolio-item-img">
-                    <img src="{% static 'img/portfolio/1.jpg' %}" alt="Resume" title="" />
-                    <a href="http://dbsiavichay.com/" target="_blank"></a>
-                </div>
+                    <i class="far fa-file-alt"></i>
+                    <h4 class="name">Resume</h4>
+                    <span class="category">Django</span>
+                </figure>
 
-                <i class="far fa-file-alt"></i>
-                <h4 class="name">Resume</h4>
-                <span class="category">Django</span>
-            </figure>
+                <figure class="item standard" data-groups='["category_all", "category_django", "category_nodejs"]'>
+                    <div class="portfolio-item-img">
+                        <img src="{% static 'img/portfolio/codebase.jpg' %}" alt="Codebase" title="" />
+                        <a href="https://gitlab.com/dbsiavichay/codebase" target="_blank"></a>
+                    </div>
 
-            <figure class="item standard" data-groups='["category_all", "category_django", "category_nodejs"]'>
-                <div class="portfolio-item-img">
-                    <img src="{% static 'img/portfolio/1.jpg' %}" alt="Codebase" title="" />
-                    <a href="https://gitlab.com/dbsiavichay/codebase" target="_blank"></a>
-                </div>
+                    <i class="far fa-file-alt"></i>
+                    <h4 class="name">Codebase</h4>
+                    <span class="category">Django, NodeJS</span>
+                </figure>
 
-                <i class="far fa-file-alt"></i>
-                <h4 class="name">Codebase</h4>
-                <span class="category">Django, NodeJS</span>
-            </figure>
+                <figure class="item standard" data-groups='["category_all", "category_libs"]'>
+                    <div class="portfolio-item-img">
+                        <img src="{% static 'img/portfolio/code.jpg' %}" alt="Superadmin" title="" />
+                        <a href="https://pypi.org/project/django-superadmin/" target="_blank"></a>
+                    </div>
 
-            <figure class="item standard" data-groups='["category_all", "category_libs"]'>
-                <div class="portfolio-item-img">
-                    <img src="{% static 'img/portfolio/1.jpg' %}" alt="Superadmin" title="" />
-                    <a href="https://pypi.org/project/django-superadmin/" target="_blank"></a>
-                </div>
+                    <i class="far fa-file-alt"></i>
+                    <h4 class="name">Django Superadmin</h4>
+                    <span class="category">Libraries</span>
+                </figure>
 
-                <i class="far fa-file-alt"></i>
-                <h4 class="name">Django Superadmin</h4>
-                <span class="category">Libraries</span>
-            </figure>
+                <figure class="item standard" data-groups='["category_all", "category_libs"]'>
+                    <div class="portfolio-item-img">
+                        <img src="{% static 'img/portfolio/code.jpg' %}" alt="Tracing" title="" />
+                        <a href="ihttps://pypi.org/project/django-tracing/" target="_blank"></a>
+                    </div>
 
-            <figure class="item standard" data-groups='["category_all", "category_libs"]'>
-                <div class="portfolio-item-img">
-                    <img src="{% static 'img/portfolio/1.jpg' %}" alt="Tracing" title="" />
-                    <a href="ihttps://pypi.org/project/django-tracing/" target="_blank"></a>
-                </div>
-
-                <i class="far fa-file-alt"></i>
-                <h4 class="name">Django Tracing</h4>
-                <span class="category">Libraries</span>
-            </figure>
+                    <i class="far fa-file-alt"></i>
+                    <h4 class="name">Django Tracing</h4>
+                    <span class="category">Libraries</span>
+                </figure>
+            </div>
+            </div>
+            <!-- End of Portfolio Content -->
         </div>
         </div>
-        <!-- End of Portfolio Content -->
     </div>
-    </div>
-</div>
 </section>
 <!-- End of Portfolio Subpage -->
 
